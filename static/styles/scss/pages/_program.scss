@@ -1,0 +1,209 @@
+.program {
+    margin-top: rem(60);
+
+    .g-title {
+        text-align: center;
+        margin-bottom: rem(16);
+    }
+
+    &-title {
+        @include font(28, 400, 36);
+        margin-bottom: rem(60);
+        text-align: center;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: rem(25);
+    }
+
+    &-filter {
+        display: flex;
+        flex-direction: column;
+        gap: rem(12);
+        margin-bottom: rem(40);
+        width: rem(400);
+
+        &__search {
+            background: #FFFFFF;
+            border: 1px solid $gray;
+            border-radius: rem(8);
+            position: relative;
+            height: rem(56);
+
+            input {
+                width: 100%;
+                height: 100%;
+                border: none;
+                padding-left: rem(24);
+
+                &::placeholder {
+                    @include font(16, 400, 80);
+                }
+            }
+
+            &-button {
+                position: absolute;
+                right: rem(24);
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        &__select {
+            position: relative;
+
+            select {
+                height: rem(56);
+                background: $gray;
+                border: 1px solid $gray;
+                border-radius: rem(8);
+                padding-left: rem(24);
+                padding-right: rem(30);
+                @include font(18, 400, 24);
+                width: 100%;
+                appearance: none;
+            }
+
+            img {
+                position: absolute;
+                right: rem(30);
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .clear-filter {
+            color: #3345D1;
+            margin-top: rem(7);
+            width: fit-content;
+        }
+    }
+
+    &__results {
+        display: flex;
+        flex-direction: column;
+        gap: rem(12);
+    }
+
+    &-result {
+        background: $gray3;
+        border-radius: rem(8);
+        padding: rem(24) rem(46);
+        display: flex;
+        gap: rem(47);
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__category {
+            @include font(20, 500);
+            margin-bottom: rem(10);
+        }
+
+        &__name {
+            font-size: rem(18);
+            margin-bottom: rem(24);
+        }
+
+        &__includes {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+        }
+
+        &__include {
+            display: flex;
+            width: 33.33%;
+            gap: rem(7);
+            @include font(12, 400);
+            color: $gray2;
+
+            img {
+                width: rem(12);
+                height: rem(12);
+            }
+        }
+
+        &__right {
+            display: flex;
+            gap: rem(28);
+            flex-direction: column;
+            width: rem(200);
+            flex-shrink: 0;
+
+            .main-btn {
+                z-index: 1;
+                height: rem(48);
+            }
+
+            .secondary-btn {
+                width: 100%;
+                height: rem(48);
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+    @include breakpoint-max($desktop-width) {
+        &__wrapper {
+            flex-direction: column;
+            gap: rem(20);
+        }
+
+        &-filter {
+            width: 100%;
+        }
+
+        &-result {
+            justify-content: space-between;
+        }
+    }
+
+    @include breakpoint-max($tablet-width) {
+        margin-top: rem(36);
+
+        &-title {
+            @include font(16, 400, 29);
+            margin-bottom: rem(30);
+        }
+
+        &-result {
+            flex-direction: column;
+
+            &__right {
+                width: 100%;
+                gap: rem(20);
+            }
+        }
+    }
+
+    @include breakpoint-max($mobile-width) {
+        .g-title {
+            text-align: start;
+        }
+
+        &-title {
+            text-align: start;
+        }
+
+        &-result {
+            gap: rem(20);
+            padding: rem(24);
+
+            &__includes {
+                flex-direction: column;
+                gap: rem(12);
+            }
+
+            &__include {
+                width: 100%;
+            }
+        }
+    }
+}

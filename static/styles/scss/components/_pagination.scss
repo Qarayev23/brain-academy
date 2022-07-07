@@ -1,0 +1,56 @@
+.g-pagination {
+    display: flex;
+    gap: rem(12);
+    margin-left: rem(80);
+    margin-top: rem(12);
+
+    &__item {
+        width: rem(36);
+        height: rem(36);
+        border-radius: rem(4);
+    }
+
+    &__link {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $gray2;
+        border-radius: rem(4);
+
+        &--active {
+            font-weight: 700;
+            color: $dark;
+        }
+
+        &:hover {
+            font-weight: 700;
+            color: $dark;
+        }
+
+        &--arrow {
+            background-color: $gray3;
+
+            svg {
+                width: rem(10);
+                height: rem(16);
+                stroke: $gray2;
+                transition: 0.3s;
+            }
+
+            &:hover {
+                background-color: #353947;
+
+                svg {
+                    stroke: white;
+                }
+            }
+        }
+    }
+
+    @include breakpoint-max($desktop-width) {
+        margin-left: 0;
+        justify-content: center;
+    }
+}

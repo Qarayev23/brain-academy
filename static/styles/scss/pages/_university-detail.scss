@@ -1,0 +1,270 @@
+.university-detail {
+    margin-top: rem(48);
+    margin-bottom: rem(60);
+
+    .university-statistics {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: rem(20) rem(8);
+        margin-bottom: rem(100);
+
+        &__box {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: rem(40);
+            padding: rem(8);
+
+            @include breakpoint-min($desktop-width) {
+                &:nth-child(even) {
+                    justify-content: space-between;
+
+                    .university-statistics__title {
+                        order: 1;
+                    }
+
+                    .university-statistics__bg {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+
+        &__bg {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            border-top-left-radius: rem(192);
+            border-bottom-left-radius: rem(192);
+        }
+
+        &__title {
+            width: rem(192);
+            height: rem(192);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            border-radius: 50%;
+            background: linear-gradient(207.58deg, #F26C6D 4.02%, #F33742 99%);
+            padding: rem(20);
+        }
+
+        &__details {
+            display: flex;
+            gap: rem(50);
+        }
+
+        &__number {
+            @include font(24, 400, 36);
+            margin-top: rem(4);
+        }
+    }
+
+    &__content {
+        position: relative;
+
+        p {
+            margin-bottom: rem(12);
+            color: $gray4;
+        }
+
+        ul,
+        ol {
+            list-style: initial;
+            padding-left: 1rem;
+            color: $gray4;
+            display: flex;
+            flex-direction: column;
+            gap: rem(12);
+        }
+    }
+
+    &__decor {
+        position: absolute;
+        top: rem(150);
+        right: -50%;
+        z-index: -1;
+        width: 100%;
+    }
+
+    &__title {
+        @include font(20, 400, 46);
+        margin-bottom: rem(12);
+    }
+
+    &__img-group {
+        display: flex;
+        gap: rem(24);
+
+        img {
+            height: rem(420);
+            border-radius: rem(8);
+            object-fit: cover;
+            width: calc(50% - 6px);
+            border-radius: rem(8);
+
+            &:last-of-type {
+                transform: translateY(rem(70));
+            }
+        }
+    }
+
+    &__img {
+        height: rem(420);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: rem(8);
+        }
+    }
+
+    &-banner {
+        position: relative;
+        height: rem(400);
+
+        .g-container {
+            height: 100%;
+        }
+
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            color: white;
+        }
+
+        &__title {
+            @include font(36, 500, 48);
+            color: white;
+            text-align: center;
+        }
+
+        &__img {
+            width: rem(121);
+            height: rem(93);
+            object-fit: contain;
+            margin-bottom: rem(8);
+        }
+
+        .university-foundation {
+            font-weight: 500;
+            color: white;
+        }
+    }
+
+    @include breakpoint-max($desktop-width) {
+        .university-statistics {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    @include breakpoint-max($mobile-width) {
+        margin-top: rem(22);
+
+        .university-statistics {
+            margin-bottom: rem(60);
+
+            &__box {
+                gap: rem(20);
+                padding: rem(5);
+            }
+
+            &__bg {
+                border-top-left-radius: rem(140);
+                border-bottom-left-radius: rem(140);
+            }
+
+            &__title {
+                width: rem(140);
+                height: rem(140);
+                padding: rem(10);
+            }
+
+            &__details {
+                flex-direction: column;
+                gap: rem(5);
+            }
+
+            &__number {
+                margin-top: 0;
+            }
+        }
+
+        &__img-group {
+            gap: rem(12);
+
+            img {
+                height: rem(320);
+
+                &:last-of-type {
+                    transform: translateY(rem(70));
+                }
+            }
+        }
+
+        &-banner {
+            height: rem(280);
+
+            &__title {
+                @include font(20, 500, 32);
+            }
+        }
+
+        &__img {
+            height: rem(260);
+        }
+
+        &__title {
+            line-height: rem(34);
+        }
+    }
+}
+
+.lg-backdrop {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.lg-item {
+    top: 50% !important;
+    transform: translateY(-35%) !important;
+}
+
+.gallery-item {
+    border-radius: rem(8);
+
+    img{
+    border-radius: rem(8);
+    }
+}
+
+
+.gallery-container {
+    max-width: calc(100% - 110px);
+    margin: auto;
+
+    @include breakpoint-max($desktop-width) {
+        max-width: calc(100% - 30px);
+    }
+
+    @include breakpoint-max($tablet-width) {
+        max-width: 100%;
+
+        .gallery-item {
+            width: calc(100% - 16px) !important;
+            left: 0 !important;
+
+            img{
+                width: 100% !important;
+            }
+        }
+    }
+}

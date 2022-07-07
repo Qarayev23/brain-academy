@@ -1,0 +1,89 @@
+.apply-success {
+    position: relative;
+    padding-top: rem(45);
+    padding-bottom: rem(124);
+
+    &__wrapper {
+        max-width: rem(740);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__icon {
+        width: rem(77);
+        height: rem(77);
+    }
+
+    &__title {
+        text-align: center;
+        @include font(36, 500, rem(48));
+        color: $main-color;
+        margin-top: rem(13);
+        margin-bottom: rem(57);
+
+        span {
+            color: $dark;
+            font-weight: 400;
+            font-style: italic;
+        }
+    }
+
+    &__subtitle {
+        @include font(20, 400, rem(36));
+        margin-bottom: rem(5);
+        text-align: center;
+    }
+
+    &__text {
+        text-align: center;
+        margin-bottom: rem(24);
+    }
+
+    .main-btn {
+        width: rem(400);
+        height: rem(56);
+        z-index: 1;
+    }
+
+    &__decor-1 {
+        position: absolute;
+        right: 0;
+        width: 35%;
+        top: rem(-140);
+        z-index: -1;
+    }
+
+    &__decor-2 {
+        position: absolute;
+        left: 0;
+        width: 45%;
+        top: rem(80);
+        z-index: -1;
+    }
+
+    @include breakpoint-max($mobile-width) {
+        padding-top: rem(18);
+        padding-bottom: rem(69);
+
+        &__title {
+            @include font(28, 500, rem(46));
+            margin-top: rem(16);
+            margin-bottom: rem(45);
+        }
+
+        .main-btn {
+            width: rem(250);
+        }
+
+        &__decor-1 {
+            top: 0;
+        }
+
+        &__decor-2 {
+            width: 50%;
+            top: rem(200);
+        }
+    }
+}

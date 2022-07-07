@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./static/styles/css/min/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/styles/css/min/select2.min.css">
+    <link rel="stylesheet" href="./static/styles/css/main.min.css">
+    <title>Brain Academy</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="g-container">
+            <nav class="navbar">
+                <a href="./home.html" class="navbar__logo">
+                    <img src="./static/assets/svg/logo.svg" alt="">
+                </a>
+
+                <ul class="navbar__list d-none d-lg-flex">
+                    <li class="navbar__item">
+                        <a href="./about.html" class="navbar__link">About</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="./programs.html" class="navbar__link">Programs</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="./universities.html" class="navbar__link">Universities</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="./apply-in-5-steps.html" class="navbar__link">Apply steps</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="./contact.html" class="navbar__link">Contact</a>
+                    </li>
+                </ul>
+
+                <a href="./apply.html" class="main-btn d-none d-lg-flex">
+                    Apply now
+                    <svg>
+                        <use xlink:href="../static/assets/svg/coolicon.svg#arrow"></use>
+                    </svg>
+                </a>
+
+                <label for="check" class="hamburger d-lg-none">
+                    <input type="checkbox" id="check" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </nav>
+
+            <nav class="mob-navbar d-lg-none">
+                <ul class="mob-navbar__list">
+                    <li class="mob-navbar__item">
+                        <a href="./about.html" class="mob-navbar__link">About</a>
+                    </li>
+                    <li class="mob-navbar__item">
+                        <a href="./programs.html" class="mob-navbar__link">Programs</a>
+                    </li>
+                    <li class="mob-navbar__item">
+                        <a href="./universities.html" class="mob-navbar__link">Universities</a>
+                    </li>
+                    <li class="mob-navbar__item">
+                        <a href="./apply.html" class="mob-navbar__link">Apply steps</a>
+                    </li>
+                    <li class="mob-navbar__item">
+                        <a href="./contact.html" class="mob-navbar__link">Contact</a>
+                    </li>
+                </ul>
+
+                <p class="ps-4">Follow us:</p>
+
+                <div class="mob-navbar__icons">
+                    <a href="" class="mob-navbar__icon">
+                        <img src="./static/assets/svg/fb.svg" alt="">
+                    </a>
+                    <a href="" class="mob-navbar__icon">
+                        <img src="./static/assets/svg/insta.svg" alt="">
+                    </a>
+                    <a href="" class="mob-navbar__icon">
+                        <img src="./static/assets/svg/linkedin.svg" alt="">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <img src="./static/assets/img/Rectangle 281.png" class="banner__bg" alt="">
+        </section>
+
+        <section class="program">
+            <div class="g-container">
+                <h1 class="g-title">
+                    Which Programs are Suitable for you ?
+                </h1>
+                <h2 class="program-title">We will help you to explore academic programs</h2>
+                <form action="">
+                    <div class="program__wrapper">
+                        <div class="program-filter">
+                            <div class="program-filter__search">
+                                <input type="text" placeholder="What are you searching for?">
+                                <button type="submit" class="program-filter__search-button">
+                                    <img src="./static/assets/svg/Search.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="program-filter__select">
+                                <select>
+                                    <option value="">All countries</option>
+                                </select>
+                                <img src="./static/assets/svg/select.svg" alt="">
+                            </div>
+                            <div class="program-filter__select">
+                                <select>
+                                    <option value="">All cities</option>
+                                </select>
+                                <img src="./static/assets/svg/select.svg" alt="">
+                            </div>
+                            <div class="program-filter__select">
+                                <select>
+                                    <option value="">All Universities</option>
+                                </select>
+                                <img src="./static/assets/svg/select.svg" alt="">
+                            </div>
+                            <div class="program-filter__select">
+                                <select>
+                                    <option value="">Select degree</option>
+                                </select>
+                                <img src="./static/assets/svg/select.svg" alt="">
+                            </div>
+                            <div class="program-filter__select">
+                                <select>
+                                    <option value="">Select language</option>
+                                </select>
+                                <img src="./static/assets/svg/select.svg" alt="">
+                            </div>
+                            <div class="program-filter__select">
+                                <select>
+                                    <option value="">Area of study</option>
+                                </select>
+                                <img src="./static/assets/svg/select.svg" alt="">
+                            </div>
+                            <div class="program-filter__select">
+                                <select>
+                                    <option value="">Tution Fees (Per Semester)</option>
+                                </select>
+                                <img src="./static/assets/svg/select.svg" alt="">
+                            </div>
+
+                            <div class="program-filter__select">
+                                <select>
+                                    <option value="">Attendance</option>
+                                </select>
+                                <img src="./static/assets/svg/select.svg" alt="">
+                            </div>
+
+                            <button class="clear-filter">
+                                Clear all filters
+                                <img src="./static/assets/svg/X.svg" alt="">
+                            </button>
+                        </div>
+
+                        <div class="program__results">
+                            <div class="program-result">
+                                <div class="program-result__left">
+                                    <h4 class="program-result__category">
+                                        Medical
+                                    </h4>
+                                    <h3 class="program-result__name">
+                                        Ataturk University
+                                    </h3>
+                                    <div class="program-result__includes">
+                                        <span class="program-result__include">
+                                            <img src="./static/assets/svg/date.svg" alt="">
+                                            Apply anytime
+                                        </span>
+                                        <span class="program-result__include">
+                                            <img src="./static/assets/svg/clock.svg" alt="">
+                                            8 semester
+                                        </span>
+                                        <span class="program-result__include">
+                                            <img src="./static/assets/svg/location2.svg" alt="">
+                                            2118 Thornridge Cir. Syracuse, Connecticut 35624
+                                        </span>
+                                        <span class="program-result__include">
+                                            <img src="./static/assets/svg/world.svg" alt="">
+                                            English
+                                        </span>
+                                        <span class="program-result__include">
+                                            <img src="./static/assets/svg/dollar.svg" alt="">
+                                            40 000$
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="program-result__right">
+                                    <a href="" class="secondary-btn">View more</a>
+                                    <a href="./apply.html" class="main-btn">
+                                        Apply now
+                                        <svg>
+                                            <use xlink:href="../static/assets/svg/coolicon.svg#arrow"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="program-result">
+                                <div class="program-result__left">
+                                    <h4 class="program-result__category">
+                                        Medical
+                                    </h4>
+                                    <h3 class="program-result__name">
+                                        Ataturk University
+                                    </h3>
+                                    <div class="program-result__includes">
+                                        <span class="program-result__include">
+                                            <img src="./static/assets/svg/date.svg" alt="">
+                                            Apply anytime
+                                        </span>
+                                        <span class="program-result__include">
+                                            <img src="./static/assets/svg/clock.svg" alt="">
+                                            8 semester
+                                        </span>
+                                        <span class="program-result__include">
+                                            <img src="./static/assets/svg/location2.svg" alt="">
+                                            2118 Thornridge Cir. Syracuse, Connecticut 35624
+                                        </span>
+                                        <span class="program-result__include">
+                                            <img src="./static/assets/svg/world.svg" alt="">
+                                            English
+                                        </span>
+                                        <span class="program-result__include">
+                                            <img src="./static/assets/svg/dollar.svg" alt="">
+                                            40 000$
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="program-result__right">
+                                    <a href="" class="secondary-btn">View more</a>
+                                    <a href="./apply.html" class="main-btn">
+                                        Apply now
+                                        <svg>
+                                            <use xlink:href="../static/assets/svg/coolicon.svg#arrow"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="program-result">
+                                <div class="program-result__left">
+                                    <h4 class="program-result__category">
+                                        Medical
+                                    </h4>
+                                    <h3 class="program-result__name">
+                                        Ataturk University
+                                    </h3>
+                                    <div class="program-result__includes">
+                                        <span class="program-result__include">
+                                            <img src="./static/assets/svg/date.svg" alt="">
+                                            Apply anytime
+                                        </span>
+                                        <span class="program-result__include">
+                                            <img src="./static/assets/svg/clock.svg" alt="">
+                                            8 semester
+                                        </span>
+                                        <span class="program-result__include">
+                                            <img src="./static/assets/svg/location2.svg" alt="">
+                                            2118 Thornridge Cir. Syracuse, Connecticut 35624
+                                        </span>
+                                        <span class="program-result__include">
+                                            <img src="./static/assets/svg/world.svg" alt="">
+                                            English
+                                        </span>
+                                        <span class="program-result__include">
+                                            <img src="./static/assets/svg/dollar.svg" alt="">
+                                            40 000$
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="program-result__right">
+                                    <a href="" class="secondary-btn">View more</a>
+                                    <a href="./apply.html" class="main-btn">
+                                        Apply now
+                                        <svg>
+                                            <use xlink:href="../static/assets/svg/coolicon.svg#arrow"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="program-result">
+                                <div class="program-result__left">
+                                    <h4 class="program-result__category">
+                                        Medical
+                                    </h4>
+                                    <h3 class="program-result__name">
+                                        Ataturk University
+                                    </h3>
+                                    <div class="program-result__includes">
+                                        <span class="program-result__include">
+                                            <img src="./static/assets/svg/date.svg" alt="">
+                                            Apply anytime
+                                        </span>
+                                        <span class="program-result__include">
+                                            <img src="./static/assets/svg/clock.svg" alt="">
+                                            8 semester
+                                        </span>
+                                        <span class="program-result__include">
+                                            <img src="./static/assets/svg/location2.svg" alt="">
+                                            2118 Thornridge Cir. Syracuse, Connecticut 35624
+                                        </span>
+                                        <span class="program-result__include">
+                                            <img src="./static/assets/svg/world.svg" alt="">
+                                            English
+                                        </span>
+                                        <span class="program-result__include">
+                                            <img src="./static/assets/svg/dollar.svg" alt="">
+                                            40 000$
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="program-result__right">
+                                    <a href="" class="secondary-btn">View more</a>
+                                    <a href="./apply.html" class="main-btn">
+                                        Apply now
+                                        <svg>
+                                            <use xlink:href="../static/assets/svg/coolicon.svg#arrow"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <ul class="g-pagination">
+                                <li class="g-pagination__item">
+                                    <a href="" class="g-pagination__link g-pagination__link--arrow">
+                                        <svg>
+                                            <use
+                                                xlink:href="./static/assets/svg/pagination-prev.svg#pagination-prev">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="g-pagination__item">
+                                    <a href="" class="g-pagination__link g-pagination__link--active">
+                                        1
+                                    </a>
+                                </li>
+                                <li class="g-pagination__item">
+                                    <a href="" class="g-pagination__link">
+                                        2
+                                    </a>
+                                </li>
+                                <li class="g-pagination__item">
+                                    <a href="" class="g-pagination__link">
+                                        3
+                                    </a>
+                                </li>
+                                <li class="g-pagination__item">
+                                    <a href="" class="g-pagination__link g-pagination__link--arrow">
+                                        <svg>
+                                            <use
+                                                xlink:href="./static/assets/svg/pagination-next.svg#pagination-next">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="have-questions have-questions--bg">
+            <div class="g-container">
+                <div class="have-questions__wrapper">
+                    <h2 class="g-title">have questions</h2>
+                    <p class="have-questions__text">
+                        Ask your questions about the study abroad journey. You are not alone, many of the students have
+                        the same questions like you. We will contact with you.
+                    </p>
+
+                    <form action="" >
+                        <div class="have-questions-form">
+                            <div class="have-questions-form__group">
+                                <label for="full-name">Full name</label>
+                                <input type="text" id="full-name" placeholder="Enter your name and surname">
+                            </div>
+                            <div class="have-questions-form__group">
+                                <label for="phone-number">Phone number</label>
+                                <input type="tel" id="phone-number" placeholder="Enter your phone number">
+                            </div>
+                            <button type="submit" class="main-btn">
+                                Send
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <img src="./static/assets/svg/Group 20.svg" class="have-questions__bg" alt="">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="g-container">
+            <div class="footer__wrapper">
+                <div class="footer__left">
+                    <a href="./home.html" class="footer__logo">
+                        <img src="./static/assets/svg/footer-logo.svg" alt="">
+                    </a>
+                    <div class="d-flex flex-column">
+                        <p class="text-white">Follow us on social media:</p>
+                        <div class="footer__social-icons">
+                            <a href="" class="footer__social-icon">
+                                <img src="./static/assets/svg/fb.svg" alt="">
+                            </a>
+                            <a href="" class="footer__social-icon">
+                                <img src="./static/assets/svg/insta.svg" alt="">
+                            </a>
+                            <a href="" class="footer__social-icon">
+                                <img src="./static/assets/svg/linkedin.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <ul class="footer__list">
+                        <p class="footer__title">
+                            About us
+                        </p>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Study programs
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Universities
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                FAQ
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer__list">
+                        <p class="footer__title">
+                            Apply now
+                        </p>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Apply steps
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Discover the Black Sea
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                10 reasons to study in Turkey
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Search programs
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__contact">
+                    <p class="footer__title">
+                        Contact
+                    </p>
+                    <ul class="footer__contact-list">
+                        <li class="footer__contact-item">
+                            <a href="tel:+0997770070" class="footer__contact-link">
+                                <img src="./static/assets/svg/phone.svg" alt="">
+                                099 777 00 70
+                            </a>
+                        </li>
+                        <li class="footer__contact-item">
+                            <a href="tel:+0997770070" class="footer__contact-link">
+                                <img src="./static/assets/svg/whatsapp.svg" alt="">
+                                077 777 00 70
+                            </a>
+                        </li>
+                        <li class="footer__contact-item">
+                            <a href="mailto:info@brainacademy.com" class="footer__contact-link">
+                                <img src="./static/assets/svg/Mail.svg" alt="">
+                                info@brainacademy.com
+                            </a>
+                        </li>
+                        <li class="footer__contact-item">
+                            <a href="" class="footer__contact-link">
+                                <img src="./static/assets/svg/location.svg" alt="">
+                                Azure Business Center
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>Developed by <b>Trustme Digital</b></p>
+                <p>2022 Brain Academy | All rights reserved ©</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./static/js/min/jquery.min.js"></script>
+    <script src="./static/js/min/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./static/js/min/select2.min.js"></script>
+    <script src="./static/js/main.js"></script>
+</body>
+
+</html>

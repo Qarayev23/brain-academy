@@ -1,0 +1,174 @@
+.header {
+    box-shadow: 0px 4px 14px 0px #0000001A;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: white;
+
+    @include breakpoint-max($desktop-sm-width) {
+        box-shadow: none;
+    }
+
+    .navbar {
+        position: relative;
+        z-index: 3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: rem(100);
+        margin-left: rem(-40);
+        margin-right: rem(-40);
+        padding-left: rem(40);
+        padding-right: rem(40);
+
+        &__logo {
+            width: rem(106);
+            height: rem(63);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &__list {
+            display: flex;
+            gap: rem(24);
+        }
+
+        &__link {
+            font-size: rem(18);
+            color: $gray2;
+
+            &:hover{
+                color: $main-color;
+            }
+        }
+
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 7px;
+            height: 36px;
+            width: 36px;
+            cursor: pointer;
+            transform: rotatez(-180deg);
+
+            span {
+                background: #353947;
+                height: 2px;
+                transition: .3s;
+                pointer-events: none;
+
+                &:nth-of-type(1) {
+                    width: 80%;
+                }
+
+                &:nth-of-type(2) {
+                    width: 50%;
+                }
+
+                &:nth-of-type(3) {
+                    width: 80%;
+                }
+            }
+
+            input[type="checkbox"] {
+                visibility: hidden;
+                position: absolute;
+                outline: none;
+
+                &:checked~span:nth-of-type(1) {
+                    transform-origin: bottom;
+                    transform: rotatez(45deg) translate(4px, 08px)
+                }
+
+                &:checked~span:nth-of-type(2) {
+                    display: none;
+                }
+
+                &:checked~span:nth-of-type(3) {
+                    transform-origin: bottom;
+                    transform: rotatez(-45deg) translate(0px, 0px)
+                }
+            }
+        }
+
+        @include breakpoint-max($tablet-width) {
+            height: rem(65);
+            margin-left: rem(-16);
+            margin-right: rem(-16);
+            padding-left: rem(16);
+            padding-right: rem(16);
+
+            &__logo {
+                width: rem(73);
+                height: rem(44);
+            }
+        }
+
+        @include breakpoint-max($desktop-sm-width) {
+            box-shadow: 0px 4px 8px 0px #0000000f;
+        }
+    }
+
+    .mob-navbar {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        padding-bottom: rem(80);
+        left: -100%;
+        top: 0;
+        margin-top: rem(65);
+        background-color: white;
+        z-index: 2;
+        transition: 0.3s;
+
+        &.active {
+            left: 0;
+        }
+
+        @include breakpoint-min($tablet-width) {
+            top: rem(100);
+        }
+
+        @include breakpoint-max($mobile-width) {
+            padding-bottom: rem(40);
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: rem(60);
+        }
+
+        &__link {
+            height: rem(80);
+            display: flex;
+            align-items: center;
+            padding: 0 rem(24);
+            color: $dark;
+            border-bottom: 1px solid $gray;
+
+            &:hover {
+                background-color: $gray;
+            }
+        }
+
+        &__icons {
+            padding: 0 rem(24);
+            display: flex;
+            gap: rem(95);
+            margin-top: rem(24);
+            margin-bottom: rem(40);
+        }
+
+        &__icon {
+            width: rem(48);
+            height: rem(48);
+        }
+    }
+}

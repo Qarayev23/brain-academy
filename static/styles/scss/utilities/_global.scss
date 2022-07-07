@@ -1,0 +1,35 @@
+.g-title {
+    @include font(36, 500, 48);
+    color: $main-color;
+    text-transform: uppercase;
+
+    @include breakpoint-max($mobile-width) {
+        @include font(24, 600, 36);
+    }
+}
+
+.g-text {
+    @include breakpoint-max($mobile-width) {
+        @include font(16, 400, 32);
+    }
+}
+
+.swiper-pagination {
+    bottom: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    &-bullet {
+        background-color: #616161 !important;
+        width: rem(16) !important;
+        height: rem(6) !important;
+        border-radius: rem(8);
+        transition: 0.3s !important;
+
+        &-active {
+            background-color: $main-color  !important;
+            width: rem(36) !important;
+        }
+    }
+}

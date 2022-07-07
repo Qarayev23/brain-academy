@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./static/styles/css/min/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/styles/css/min/select2.min.css">
+    <link rel="stylesheet" href="./static/styles/css/main.min.css">
+    <title>Brain Academy</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="g-container">
+            <nav class="navbar">
+                <a href="./home.html" class="navbar__logo">
+                    <img src="./static/assets/svg/logo.svg" alt="">
+                </a>
+
+                <ul class="navbar__list d-none d-lg-flex">
+                    <li class="navbar__item">
+                        <a href="./about.html" class="navbar__link">About</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="./programs.html" class="navbar__link">Programs</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="./universities.html" class="navbar__link">Universities</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="./apply-in-5-steps.html" class="navbar__link">Apply steps</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="./contact.html" class="navbar__link">Contact</a>
+                    </li>
+                </ul>
+
+                <a href="./apply.html" class="main-btn d-none d-lg-flex">
+                    Apply now
+                    <svg>
+                        <use xlink:href="../static/assets/svg/coolicon.svg#arrow"></use>
+                    </svg>
+                </a>
+
+                <label for="check" class="hamburger d-lg-none">
+                    <input type="checkbox" id="check" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </nav>
+
+            <nav class="mob-navbar d-lg-none">
+                <ul class="mob-navbar__list">
+                    <li class="mob-navbar__item">
+                        <a href="./about.html" class="mob-navbar__link">About</a>
+                    </li>
+                    <li class="mob-navbar__item">
+                        <a href="./programs.html" class="mob-navbar__link">Programs</a>
+                    </li>
+                    <li class="mob-navbar__item">
+                        <a href="./universities.html" class="mob-navbar__link">Universities</a>
+                    </li>
+                    <li class="mob-navbar__item">
+                        <a href="./apply.html" class="mob-navbar__link">Apply steps</a>
+                    </li>
+                    <li class="mob-navbar__item">
+                        <a href="./contact.html" class="mob-navbar__link">Contact</a>
+                    </li>
+                </ul>
+
+                <p class="ps-4">Follow us:</p>
+
+                <div class="mob-navbar__icons">
+                    <a href="" class="mob-navbar__icon">
+                        <img src="./static/assets/svg/fb.svg" alt="">
+                    </a>
+                    <a href="" class="mob-navbar__icon">
+                        <img src="./static/assets/svg/insta.svg" alt="">
+                    </a>
+                    <a href="" class="mob-navbar__icon">
+                        <img src="./static/assets/svg/linkedin.svg" alt="">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="apply">
+            <div class="g-container">
+                <div class="apply-box">
+                    <h1 class="apply-box__title">
+                        You are applying to Medicine at Ataturk University
+                    </h1>
+
+                    <form action="">
+                        <div class="apply-box__form">
+                            <div class="apply-box__form-group">
+                                <label for="fulllName">Academic year</label>
+                                <div class="apply-box__select">
+                                    <img src="./static/assets/svg/select.svg" alt="">
+                                    <select name="" id="">
+                                        <option>Select academic year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="apply-box__form-group">
+                                <label for="fulllName">Semester</label>
+                                <div class="apply-box__select">
+                                    <img src="./static/assets/svg/select.svg" alt="">
+                                    <select name="" id="">
+                                        <option>Select semester</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="apply-box__form-group">
+                                <label for="fulllName">Program</label>
+                                <div class="apply-box__select">
+                                    <img src="./static/assets/svg/select.svg" alt="">
+                                    <select name="" id="">
+                                        <option>Select study program</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="apply-box__form-group">
+                                <label for="fulllName">Full name</label>
+                                <input type="text" id="fullName" placeholder="Enter your full name">
+                            </div>
+                            <div class="apply-box__form-group">
+                                <label for="fulllName">Gender</label>
+                                <div class="apply-box__select">
+                                    <img src="./static/assets/svg/select.svg" alt="">
+                                    <select name="" id="">
+                                        <option>Select</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="apply-box__form-group">
+                                <label for="fulllName">Birthdate</label>
+                                <div class="birthdate">
+                                    <div class="apply-box__select">
+                                        <img src="./static/assets/svg/select.svg" alt="">
+                                        <select name="" id="">
+                                            <option>MM</option>
+                                        </select>
+                                    </div>
+                                    <div class="apply-box__select">
+                                        <img src="./static/assets/svg/select.svg" alt="">
+                                        <select name="" id="">
+                                            <option>DD</option>
+                                        </select>
+                                    </div>
+                                    <div class="apply-box__select">
+                                        <img src="./static/assets/svg/select.svg" alt="">
+                                        <select name="" id="">
+                                            <option>YY</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="apply-box__form-group">
+                                <label for="fulllName">Nationality</label>
+                                <div class="apply-box__select">
+                                    <img src="./static/assets/svg/select.svg" alt="">
+                                    <select name="" id="">
+                                        <option>Select</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="apply-box__form-group">
+                                <label for="fulllName">Phone number</label>
+                                <div class="phone-number">
+                                    <div class="apply-box__select">
+                                        <img src="./static/assets/svg/select.svg" alt="">
+                                        <select name="" id="">
+                                            <option>(+99450)</option>
+                                        </select>
+                                    </div>
+                                    <input type="text" id="fullName" placeholder="xxx xx xx">
+                                </div>
+                            </div>
+                            <div class="apply-box__form-group">
+                                <label for="fulllName">Email adress</label>
+                                <input type="text" id="fullName" placeholder="example@gmail.com">
+                            </div>
+                            <div class="apply-box__form-group">
+                                <a href="./apply.html" class="main-btn">
+                                    Apply now
+                                    <svg>
+                                        <use xlink:href="../static/assets/svg/coolicon.svg#arrow"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="g-container">
+            <div class="footer__wrapper">
+                <div class="footer__left">
+                    <a href="./home.html" class="footer__logo">
+                        <img src="./static/assets/svg/footer-logo.svg" alt="">
+                    </a>
+                    <div class="d-flex flex-column">
+                        <p class="text-white">Follow us on social media:</p>
+                        <div class="footer__social-icons">
+                            <a href="" class="footer__social-icon">
+                                <img src="./static/assets/svg/fb.svg" alt="">
+                            </a>
+                            <a href="" class="footer__social-icon">
+                                <img src="./static/assets/svg/insta.svg" alt="">
+                            </a>
+                            <a href="" class="footer__social-icon">
+                                <img src="./static/assets/svg/linkedin.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <ul class="footer__list">
+                        <p class="footer__title">
+                            About us
+                        </p>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Study programs
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Universities
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                FAQ
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer__list">
+                        <p class="footer__title">
+                            Apply now
+                        </p>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Apply steps
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Discover the Black Sea
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                10 reasons to study in Turkey
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Search programs
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__contact">
+                    <p class="footer__title">
+                        Contact
+                    </p>
+                    <ul class="footer__contact-list">
+                        <li class="footer__contact-item">
+                            <a href="tel:+0997770070" class="footer__contact-link">
+                                <img src="./static/assets/svg/phone.svg" alt="">
+                                099 777 00 70
+                            </a>
+                        </li>
+                        <li class="footer__contact-item">
+                            <a href="tel:+0997770070" class="footer__contact-link">
+                                <img src="./static/assets/svg/whatsapp.svg" alt="">
+                                077 777 00 70
+                            </a>
+                        </li>
+                        <li class="footer__contact-item">
+                            <a href="mailto:info@brainacademy.com" class="footer__contact-link">
+                                <img src="./static/assets/svg/Mail.svg" alt="">
+                                info@brainacademy.com
+                            </a>
+                        </li>
+                        <li class="footer__contact-item">
+                            <a href="" class="footer__contact-link">
+                                <img src="./static/assets/svg/location.svg" alt="">
+                                Azure Business Center
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>Developed by <b>Trustme Digital</b></p>
+                <p>2022 Brain Academy | All rights reserved ©</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./static/js/min/jquery.min.js"></script>
+    <script src="./static/js/min/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./static/js/min/select2.min.js"></script>
+    <script src="./static/js/main.js"></script>
+
+</body>
+
+</html>

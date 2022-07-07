@@ -1,0 +1,51 @@
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: rem(12.5);
+    margin-bottom: rem(80);
+
+    &-item {
+        border: none !important;
+        border-radius: rem(8);
+    }
+
+    &-button {
+        background-color: white !important;
+        box-shadow: none !important;
+        color: $dark  !important;
+        font-size: rem(18) !important;
+        font-weight: 400 !important;
+        line-height: rem(26) !important;
+        padding: rem(18) rem(24) !important;
+        border-radius: rem(8) !important;
+        justify-content: space-between;
+        gap: rem(20);
+
+        img {
+            transition: 0.3s;
+        }
+
+        &::after {
+            content: none;
+        }
+
+        &:not(.collapsed) {
+            img {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &-body {
+        color: $gray4  !important;
+        padding: rem(26) rem(24) !important;
+    }
+
+    @include breakpoint-max($mobile-width) {
+        margin-bottom: rem(37);
+
+        &-body {
+            padding-top: 0 !important;
+        }
+    }
+}
