@@ -167,8 +167,10 @@
         }
 
         &__icon {
-            width: rem(48);
-            height: rem(48);
+            img{
+                width: rem(36);
+                height: rem(36);
+            }
         }
     }
 }
